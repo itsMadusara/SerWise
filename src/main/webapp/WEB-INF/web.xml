@@ -1,0 +1,490 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app
+        xmlns="https://jakarta.ee/xml/ns/jakartaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+        version="5.0"
+>
+  <display-name>Archetype Created Web Application</display-name>
+
+
+
+
+
+<!--  Created by Tharushka Madusara-->
+<!--  Branch Component Start-->
+
+  <servlet>
+    <servlet-name>addBranch</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Branch.addBranch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addBranch</servlet-name>
+    <url-pattern>/addbranch</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>getBranchList</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Branch.getBranchList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getBranchList</servlet-name>
+    <url-pattern>/branchlist</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateBranch</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Branch.updateBranch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateBranch</servlet-name>
+    <url-pattern>/updateBranch</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteBranch</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Branch.deleteBranch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteBranch</servlet-name>
+    <url-pattern>/deleteBranch</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateBranchDetails</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Branch.updateBranchDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateBranchDetails</servlet-name>
+    <url-pattern>/updateBranchDetails</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>getBranchLocation</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Branch.getBranchLocationList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getBranchLocation</servlet-name>
+    <url-pattern>/branchLocation</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>checkBranchManager</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Branch.checkBranchManager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkBranchManager</servlet-name>
+    <url-pattern>/checkBranchManager</url-pattern>
+  </servlet-mapping>
+
+<!--  Branch Component End-->
+<!--  Inventory Component Start-->
+
+  <servlet>
+    <servlet-name>addInventory</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.addInventory</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addInventory</servlet-name>
+    <url-pattern>/addinventory</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>getInventoryList</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.getInventoryList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getInventoryList</servlet-name>
+    <url-pattern>/inventorylist</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteInventoryItem</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.deleteInventory</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteInventoryItem</servlet-name>
+    <url-pattern>/deleteInventoryItem</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateInventory</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.updateInventory</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateInventory</servlet-name>
+    <url-pattern>/updateInventory</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateInventoryDetails</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.updateInventoryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateInventoryDetails</servlet-name>
+    <url-pattern>/updateInventoryDetails</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteInventoryBranch</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.deleteInventoryBranch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteInventoryBranch</servlet-name>
+    <url-pattern>/deleteInventoryBranch</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>getInventoryNames</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.getInventoryNames</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getInventoryNames</servlet-name>
+    <url-pattern>/inventoryNames</url-pattern>
+  </servlet-mapping>
+
+<!--  Inventory Component End-->
+<!--  Payment component Start-->
+
+  <servlet>
+    <servlet-name>getInvoice</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Payment.getInvoice</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getInvoice</servlet-name>
+    <url-pattern>/getInvoice</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>calculateInvoice</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Payment.calculateInvoice</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>calculateInvoice</servlet-name>
+    <url-pattern>/calculateInvoice</url-pattern>
+  </servlet-mapping>
+
+<!--  Payment Component End-->
+<!--  Process Component Start-->
+
+  <servlet>
+    <servlet-name>doneJobList</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Process.doneJobList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doneJobList</servlet-name>
+    <url-pattern>/doneJobList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>billedJobList</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Process.billedJobList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>billedJobList</servlet-name>
+    <url-pattern>/billedJobList</url-pattern>
+  </servlet-mapping>
+
+<!--  Process Component End-->
+<!--  Profile Component Start-->
+
+  <servlet>
+    <servlet-name>uploadProfilePicture</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Profile.uploadProfilePicture</servlet-class>
+    <multipart-config>
+      <location>/</location>
+      <max-file-size>20848820</max-file-size>
+      <max-request-size>418018841</max-request-size>
+      <file-size-threshold>1048576</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uploadProfilePicture</servlet-name>
+    <url-pattern>/uploadProfilePicture</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>editProfile</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Profile.editProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editProfile</servlet-name>
+    <url-pattern>/editProfile</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Profile</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Profile.profileDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Profile</servlet-name>
+    <url-pattern>/Profile</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>generateOtp</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Profile.generateOtp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>generateOtp</servlet-name>
+    <url-pattern>/generateOtp</url-pattern>
+  </servlet-mapping>
+
+<!--  Profile Component End-->
+<!--  Registration Component Start-->
+
+  <servlet>
+    <servlet-name>addEmployee</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Registration.addEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addEmployee</servlet-name>
+    <url-pattern>/addemployee</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>getEmployeeList</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Registration.getEmployeeList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getEmployeeList</servlet-name>
+    <url-pattern>/employeelist</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteEmployee</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Registration.deleteEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteEmployee</servlet-name>
+    <url-pattern>/deleteEmployee</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateEmployee</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Registration.updateEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateEmployee</servlet-name>
+    <url-pattern>/updateEmployee</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateEmployeeDetails</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Registration.updateEmployeeDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateEmployeeDetails</servlet-name>
+    <url-pattern>/updateEmployeeDetails</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>checkEmployee</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Registration.checkEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkEmployee</servlet-name>
+    <url-pattern>/checkEmployee</url-pattern>
+  </servlet-mapping>
+
+<!--  Registration Component End-->
+<!--  Report Component Start-->
+
+  <servlet>
+    <servlet-name>branchReport</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Report.branchReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>branchReport</servlet-name>
+    <url-pattern>/branchReport</url-pattern>
+  </servlet-mapping>
+
+<!--  Report Component End-->
+<!--  Service Component Start-->
+
+  <servlet>
+    <servlet-name>addService</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Services.addService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addService</servlet-name>
+    <url-pattern>/addService</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>serviceList</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Services.getServiceList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serviceList</servlet-name>
+    <url-pattern>/serviceList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateService</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Services.updateService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateService</servlet-name>
+    <url-pattern>/updateService</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateServiceDetails</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Services.updateServiceDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateServiceDetails</servlet-name>
+    <url-pattern>/updateServiceDetails</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteService</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Services.deleteService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteService</servlet-name>
+    <url-pattern>/deleteService</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteServiceBranch</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Services.deleteServiceBranch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteServiceBranch</servlet-name>
+    <url-pattern>/deleteServiceBranch</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteItemService</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Services.deleteServiceItem</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteItemService</servlet-name>
+    <url-pattern>/deleteItemService</url-pattern>
+  </servlet-mapping>
+
+<!--  Service Component End-->
+<!--  End of Created by Tharushka Madusara-->
+
+<!--  Thamira-->
+
+  <servlet>
+    <servlet-name>ServletLogin</servlet-name>
+    <servlet-class>com.CS01.SerWise.ServletLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletLogin</servlet-name>
+    <url-pattern>/ServletLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletLogout</servlet-name>
+    <servlet-class>com.CS01.SerWise.ServletLogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletLogout</servlet-name>
+    <url-pattern>/ServletLogout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletRegister</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Registration.ServletRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletOTP</servlet-name>
+    <url-pattern>/ServletOTP</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletOTP</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Process.ServletOTP</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletRegister</servlet-name>
+    <url-pattern>/ServletRegister</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletAddVehicle</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.ServletAddVehicle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAddVehicle</servlet-name>
+    <url-pattern>/ServletAddVehicle</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletAddCheckupAppointment</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Appointments.ServletAddCheckupAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAddCheckupAppointment</servlet-name>
+    <url-pattern>/ServletAddCheckupAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletAddLubeAppointment</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Appointments.ServletAddLubeAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAddLubeAppointment</servlet-name>
+    <url-pattern>/ServletAddLubeAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RemoveVehicle</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.RemoveVehicle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveVehicle</servlet-name>
+    <url-pattern>/RemoveVehicle</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RemoveAppointment</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Appointments.RemoveAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveAppointment</servlet-name>
+    <url-pattern>/RemoveAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ResheduleAppointment</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Appointments.ResheduleAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResheduleAppointment</servlet-name>
+    <url-pattern>/ResheduleAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletIssueItems</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.ServletIssueItems</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletIssueItems</servlet-name>
+    <url-pattern>/ServletIssueItems</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletAddStock</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.ServletAddStock</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAddStock</servlet-name>
+    <url-pattern>/ServletAddStock</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletUpdateHT</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.ServletUpdateHT</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletUpdateHT</servlet-name>
+    <url-pattern>/ServletUpdateHT</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletAddNewBatch</servlet-name>
+    <servlet-class>com.CS01.SerWise.Services.Inventory.ServletAddNewBatch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAddNewBatch</servlet-name>
+    <url-pattern>/ServletAddNewBatch </url-pattern>
+  </servlet-mapping>
+
+<!-- Thamira End-->
+</web-app>
